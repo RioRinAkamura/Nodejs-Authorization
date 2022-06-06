@@ -1,0 +1,23 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJtYXQiLCJpYXQiOjE2NTQ0OTM0NDcsImV4cCI6MTY1NDQ5MzQ2N30.--L2oSezHosL93ZNS6B1rErz9QPu0KqTZYz_ekvWdUU
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username" : "mat"
+}
+
+###
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJtYXQiLCJpYXQiOjE2NTQ0OTM0MjUsImV4cCI6MTY1NDQ5NzAyNX0.Pl4CSERfk88DteB-Uo7Q9Ui4W9Bs02wC_ewCEnlGwvw"
+}
+
+###
+DELETE http://localhost:3000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJtYXQiLCJpYXQiOjE2NTQ0OTQyNzYsImV4cCI6MTY1NDQ5NDU3Nn0.uleWdOI0sdzqW9I_Eo1_DAx9uON7NmloBuxzZZSyD80
